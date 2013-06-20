@@ -1,4 +1,22 @@
-body {
-    background-color:gray;
+h1  {
+    color:Gray;
+    font-family: Arial;
+}
 
+
+.knopframe {
+    border:outset #778899;
+    background-color:#B0C4DE;
+    height:25px;
+    width:100px;
+    text-align:center;
+}
+
+.knoplink {
+    text-decoration: none;
+    color:#2F4F4F;
+}
+
+body {
+    background-color: #D3D3D3;
 }
