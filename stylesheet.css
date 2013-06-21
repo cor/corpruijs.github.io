@@ -28,6 +28,12 @@ h1  {
     color:#2F4F4F;
 }
 
+.knopframe:hover > .knoplink {
+    text-decoration: none;
+    color:white;
+}
+
+
 body {
     background-color: #D3D3D3;
 }
