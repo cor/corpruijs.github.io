@@ -3,6 +3,22 @@ h1  {
     font-family: Arial;
 }
 
+#current_tab {
+    border:inset #B0C4DE;
+    background-color: #778899;
+    border-radius:10%;
+    height:25px;
+    width:100px;
+    text-align:center;
+}
+
+#current_tab > .knoplink {
+    text-decoration: none;
+    color:#2F4F4F;
+} 
+    
+
+
 
 .knopframe {
     border:outset #778899;
