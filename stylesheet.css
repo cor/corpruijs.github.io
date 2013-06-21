@@ -10,11 +10,6 @@ h1  {
 #current_tab {
     border:inset #B0C4DE;
     background-color: #778899;
-    border-radius:2px;
-    height:25px;
-    width:100px;
-    text-align:center;
-    display:inline-block;
 }
 
     
@@ -37,7 +32,7 @@ div.tabbar ul li {
 	padding:0;
 }
 
-div.tabbar ul li {
+div.tabbar ul li a{
     border:outset #778899;
     background-color:#B0C4DE;
     border-radius:2px;
@@ -46,9 +41,11 @@ div.tabbar ul li {
     text-align:center;
     margin: 0 0 0 0;
     display: inline-block;
+     text-decoration: none;
+    color:#2F4F4F;
 }
 
-div.tabbar ul li:hover {
+div.tabbar ul li:hover a{
     border:inset #B0C4DE;
     background-color: #778899;
     border-radius:2px;
@@ -63,10 +60,6 @@ div.tabbar ul li:hover {
     display: block;
 }
 
-div.tabbar ul li a {
-    text-decoration: none;
-    color:#2F4F4F;
-}
 
 
 body {
