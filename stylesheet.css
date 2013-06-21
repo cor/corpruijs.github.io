@@ -14,7 +14,7 @@ h1  {
 }
 
 .knopframe:hover {
-    border:outset #B0C4DE;
+    border:inset #B0C4DE;
     background-color: #778899;
     border-radius:10%;
     height:25px;
