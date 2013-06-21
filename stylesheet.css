@@ -37,7 +37,7 @@ div.tabbar ul li {
 	padding:0;
 }
 
-.knopframe {
+div.tabbar ul li {
     border:outset #778899;
     background-color:#B0C4DE;
     border-radius:2px;
@@ -48,7 +48,7 @@ div.tabbar ul li {
     display: inline-block;
 }
 
-.knopframe:hover {
+div.tabbar ul li:hover {
     border:inset #B0C4DE;
     background-color: #778899;
     border-radius:2px;
@@ -63,7 +63,7 @@ div.tabbar ul li {
     display: block;
 }
 
-.knoplink {
+div.tabbar ul li a {
     text-decoration: none;
     color:#2F4F4F;
 }
