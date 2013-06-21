@@ -28,10 +28,8 @@ h1  {
     height:25px;
     width:100px;
     text-align:center;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
+    margin: 0 0 0 0;
+    display: inline-block;
 }
 
 .knopframe:hover {
