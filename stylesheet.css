@@ -24,7 +24,18 @@ h1  {
     
 }
 
+div.tabbar .clear {
+    clear:both;
+}
+div.tabbar ul {
+    list-style:none;
+}
 
+div.tabbar ul li {
+    float:left;
+    margin:0;
+	padding:0;
+}
 
 .knopframe {
     border:outset #778899;
