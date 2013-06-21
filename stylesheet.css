@@ -12,7 +12,7 @@ h1  {
     text-align:center;
 }
 
-#current_tab > .knoplink {
+.knoplink > #current_tab {
     text-decoration: none;
     color:#2F4F4F;
 } 
