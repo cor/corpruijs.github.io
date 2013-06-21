@@ -7,10 +7,20 @@ h1  {
 .knopframe {
     border:outset #778899;
     background-color:#B0C4DE;
-    border-radius:20;
+    border-radius:10%;
     height:25px;
     width:100px;
     text-align:center;
+}
+
+.knopframe:hover {
+    border:outset #B0C4DE;
+    background-color: #778899;
+    border-radius:10%;
+    height:25px;
+    width:100px;
+    text-align:center;
+    
 }
 
 .knoplink {
