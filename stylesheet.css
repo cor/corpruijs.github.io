@@ -6,7 +6,7 @@ h1  {
 #current_tab {
     border:inset #B0C4DE;
     background-color: #778899;
-    border-radius:0;
+    border-radius:2px;
     height:25px;
     width:100px;
     text-align:center;
@@ -25,7 +25,7 @@ h1  {
 .knopframe {
     border:outset #778899;
     background-color:#B0C4DE;
-    border-radius:0;
+    border-radius:2px;
     height:25px;
     width:100px;
     text-align:center;
@@ -36,7 +36,7 @@ h1  {
 .knopframe:hover {
     border:inset #B0C4DE;
     background-color: #778899;
-    border-radius:0;
+    border-radius:2px;
     height:25px;
     width:100px;
     text-align:center;
