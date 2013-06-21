@@ -12,10 +12,6 @@ h1  {
     text-align:center;
 }
 
-.knoplink > #current_tab {
-    text-decoration: none;
-    color:#2F4F4F;
-} 
     
 .datum {
     font-size: 22px;
@@ -47,11 +43,6 @@ h1  {
 .knoplink {
     text-decoration: none;
     color:#2F4F4F;
-}
-
-.knopframe:hover > .knoplink {
-    text-decoration: none;
-    color:white;
 }
 
 
