@@ -10,6 +10,7 @@ h1  {
     height:25px;
     width:100px;
     text-align:center;
+    display:inline-block;
 }
 
     
@@ -39,6 +40,7 @@ h1  {
     height:25px;
     width:100px;
     text-align:center;
+    display: inline-block;
     
 }
 
