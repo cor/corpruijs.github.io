@@ -44,6 +44,10 @@ h1  {
     
 }
 
+.text {
+    display: block;
+}
+
 .knoplink {
     text-decoration: none;
     color:#2F4F4F;
