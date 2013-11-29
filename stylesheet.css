@@ -1,10 +1,130 @@
 * {
-    font-family: helvetica;
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background:#000;
+    color:#fff;
+    font:13px Helvetica,  Arial,  sans-serif
+}
+
+.wrap {
+    margin:0 auto;
+    width:900px;
+}
+
+#header, #footer {
+    float:left;
+    padding:15px 0;
+    min-width:100%;
+}
+
+#header {
+    background:#666;
+}
+
+#header .logo {
+    float:left;
+    width:150px;
+}
+
+#header p {
+    float:right;
+    width:400px;
+    margin:0;
+}
+
+.button {
+
+border:outset #778899;
+background-color:#B0C4DE;
+border-radius:2px;
+height:25px;
+width:100px;
+text-align:center;
+margin: 0 0 0 0;
+display: inline-block;
+text-decoration: none;
+color:#2F4F4F;
+      
+}
+
+
+.button:hover {
+    
+    border:inset #B0C4DE;
+    background-color: #778899;
+    border-radius:2px;
+    height:25px;
+    width:100px;
+    text-align:center;
+    display: inline-block;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+#content {
+    padding:15px 0;
+    clear:both;
+}
+
+#footer {
+    background:#333;
+    text-align:center;
+    /*To anchor to bottom of page uncomment the following lines:*/
+    /*position:fixed;
+    bottom:0;*/
+}
+
+#footer a {
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1  {
     color:Gray;
-    font-family: Arial;
+    font-family: Helvetica,  Arial;
 }
 
 #current_tab {
@@ -66,7 +186,7 @@ div.tabbar ul li:hover a{
 
 
 body {
-    background-color: #afd2ff;
+    background-color: rgb(126, 174, 235);
 }
 
 #404 {
