@@ -66,5 +66,9 @@ div.tabbar ul li:hover a{
 
 
 body {
-    background-color: #D3D3D3;
+    background-color: #afd2ff;
+}
+
+#404 {
+    font-family: Helvetica;
 }
