@@ -117,7 +117,7 @@ transition:.5s;
 }
 .button:hover {
     background-color: #d6d0d0;
-    border-radius:5px;
+    border-radius:10px;
     text-align:center;
     display: inline-block;
     
