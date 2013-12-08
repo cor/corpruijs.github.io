@@ -1,32 +1,12 @@
-* {
-     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    background:#000;
-    color:#fff;
-    font:13px Helvetica,  Arial,  sans-serif
-}
-
-.wrap {
-    margin:0 auto;
-    width:900px;
-}
-
+/*
+##     ## ########    ###    ########  ######## ########  
+##     ## ##         ## ##   ##     ## ##       ##     ## 
+##     ## ##        ##   ##  ##     ## ##       ##     ## 
+######### ######   ##     ## ##     ## ######   ########  
+##     ## ##       ######### ##     ## ##       ##   ##   
+##     ## ##       ##     ## ##     ## ##       ##    ##  
+##     ## ######## ##     ## ########  ######## ##     ## 
+*/
 #header, #footer {
     float:left;
     padding:15px 0;
@@ -34,12 +14,21 @@ body {
 }
 
 #header {
-    background:#666;
+    background:rgb(224, 138, 52);
 }
+
+#header a {
+    color:rgb(52, 171, 224);
+}
+
+#header, .quotes {
+    background:rgb(52, 171, 224);
+}
+
 
 #header .logo {
     float:left;
-    width:150px;
+    width:144px;
 }
 
 #header p {
@@ -47,148 +36,112 @@ body {
     width:400px;
     margin:0;
 }
-
-.button {
-
-border:outset #778899;
-background-color:#B0C4DE;
-border-radius:2px;
-height:25px;
-width:100px;
-text-align:center;
-margin: 0 0 0 0;
-display: inline-block;
-text-decoration: none;
-color:#2F4F4F;
-      
+/*
+########   #######  ########  ##    ## 
+##     ## ##     ## ##     ##  ##  ##  
+##     ## ##     ## ##     ##   ####   
+########  ##     ## ##     ##    ##    
+##     ## ##     ## ##     ##    ##    
+##     ## ##     ## ##     ##    ##    
+########   #######  ########     ##    
+*/
+body {
+    background-color: rgb(218,	220,	194	);
+    color:#fff;
+    font:13px Helvetica,  Arial,  sans-serif
 }
-
-
-.button:hover {
-    
-    border:inset #B0C4DE;
-    background-color: #778899;
-    border-radius:2px;
-    height:25px;
-    width:100px;
-    text-align:center;
-    display: inline-block;
-    
-}
-
-
-
-
-
-
-
-
-
-
 
 #content {
     padding:15px 0;
     clear:both;
+    color:gray;
 }
 
+.wrap {
+    margin:0 auto;
+    width:950px;
+}
+
+/*
+########  #######   #######  ######## ######## ########  
+##       ##     ## ##     ##    ##    ##       ##     ## 
+##       ##     ## ##     ##    ##    ##       ##     ## 
+######   ##     ## ##     ##    ##    ######   ########  
+##       ##     ## ##     ##    ##    ##       ##   ##   
+##       ##     ## ##     ##    ##    ##       ##    ##  
+##        #######   #######     ##    ######## ##     ## 
+*/
 #footer {
     background:#333;
     text-align:center;
-    /*To anchor to bottom of page uncomment the following lines:*/
-    /*position:fixed;
-    bottom:0;*/
+    /* Maak de onderstaande 2 regels een comment zodat de footer niet meer aan de onderkant van de pagina staat */
+    position:fixed;
+    bottom:0;
 }
 
 #footer a {
     color:#fff;
 }
+/*
+########  ##     ## ######## ########  #######  ##    ## 
+##     ## ##     ##    ##       ##    ##     ## ###   ## 
+##     ## ##     ##    ##       ##    ##     ## ####  ## 
+########  ##     ##    ##       ##    ##     ## ## ## ## 
+##     ## ##     ##    ##       ##    ##     ## ##  #### 
+##     ## ##     ##    ##       ##    ##     ## ##   ### 
+########   #######     ##       ##     #######  ##    ## 
+*/
 
+.button {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*border:outset #778899;*/
+background-color:rgb(255, 255, 255);
+border-radius:5px;
+height:36px;
+width:125px;
+text-align:center;
+margin: 0 0 0 0;
+display: inline-block;
+text-decoration: none;
+font-size:24px;
+font-weight:bold;
+font-family:Arial;
+color:#fff;
+    
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition:.5s;
+      
+}
+.button:hover {
+    background-color: #d6d0d0;
+    border-radius:5px;
+    text-align:center;
+    display: inline-block;
+    
+}
+/*
+########  #######  ##    ## ########  ######  
+##       ##     ## ###   ##    ##    ##    ## 
+##       ##     ## ####  ##    ##    ##       
+######   ##     ## ## ## ##    ##     ######  
+##       ##     ## ##  ####    ##          ## 
+##       ##     ## ##   ###    ##    ##    ## 
+##        #######  ##    ##    ##     ######  
+*/
+* {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+    
+}
 
 h1  {
     color:Gray;
     font-family: Helvetica,  Arial;
 }
-
-#current_tab {
-    border:inset #B0C4DE;
-    background-color: #778899;
-}
-
-    
+ 
 .datum {
     font-size: 22px;
-    
-    
-}
-div.tabbar {
-    text-align: center;
-}
-
-div.tabbar .clear {
-    clear:both;
-}
-div.tabbar ul {
-    list-style:none;
-}
-
-div.tabbar ul li {
-    float:left;
-    margin:0;
-	padding:0;
-}
-
-div.tabbar ul li a {
-    border:outset #778899;
-    background-color:#B0C4DE;
-    border-radius:2px;
-    height:25px;
-    width:100px;
-    text-align:center;
-    margin: 0 0 0 0;
-    display: inline-block;
-    text-decoration: none;
-    color:#2F4F4F;
-}
-
-div.tabbar ul li:hover a{
-    border:inset #B0C4DE;
-    background-color: #778899;
-    border-radius:2px;
-    height:25px;
-    width:100px;
-    text-align:center;
-    display: inline-block;
-    
-}
-
-.text {
-    display: block;
-}
-
-
-
-body {
-    background-color: rgb(126, 174, 235);
-}
-
-#404 {
-    font-family: Helvetica;
 }
