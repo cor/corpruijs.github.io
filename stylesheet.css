@@ -74,9 +74,9 @@ body {
 #footer {
     background:#333;
     text-align:center;
-    /* Maak de onderstaande 2 regels een comment zodat de footer niet meer aan de onderkant van de pagina staat */
+    /* Maak de onderstaande 2 regels een comment zodat de footer niet meer aan de onderkant van de pagina staat 
     position:fixed;
-    bottom:0;
+    bottom:0; */
 }
 
 #footer a {
