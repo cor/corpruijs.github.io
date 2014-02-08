@@ -46,7 +46,7 @@
 ########   #######  ########     ##    
 */
 body {
-    background-color: rgb(181, 183, 158);
+    background-color: rgb(255, 255, 255);
     color:#fff;
     font:13px Helvetica,  Arial,  sans-serif
 }
@@ -55,6 +55,7 @@ body {
     padding:15px 0;
     clear:both;
     color:gray;
+    background-color: rgb(245, 245, 245);
 }
 
 .wrap {
@@ -116,7 +117,7 @@ transition:.5s;
       
 }
 .button:hover {
-    background-color: #d6d0d0;
+    background-color: #F5AE38;
     border-radius:10px;
     text-align:center;
     display: inline-block;
