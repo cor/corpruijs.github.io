@@ -1,241 +1,149 @@
+/*
+##     ## ########    ###    ########  ######## ########  
+##     ## ##         ## ##   ##     ## ##       ##     ## 
+##     ## ##        ##   ##  ##     ## ##       ##     ## 
+######### ######   ##     ## ##     ## ######   ########  
+##     ## ##       ######### ##     ## ##       ##   ##   
+##     ## ##       ##     ## ##     ## ##       ##    ##  
+##     ## ######## ##     ## ########  ######## ##     ## 
+*/
+#header, #footer {
+    float:left;
+    padding:15px 0;
+    min-width:100%;
+}
+
+#header {
+    background:rgb(224, 138, 52);
+}
+
+#header a {
+    color:rgb(52, 171, 224);
+}
+
+#header, .quotes {
+    background:rgb(52, 171, 224);
+}
+
+
+#header .logo {
+    float:left;
+    width:144px;
+}
+
+#header p {
+    float:right;
+    width:400px;
+    margin:0;
+}
+/*
+########   #######  ########  ##    ## 
+##     ## ##     ## ##     ##  ##  ##  
+##     ## ##     ## ##     ##   ####   
+########  ##     ## ##     ##    ##    
+##     ## ##     ## ##     ##    ##    
+##     ## ##     ## ##     ##    ##    
+########   #######  ########     ##    
+*/
 body {
-	font-family: helvetica;
-	background-color: #f9f8eb
-
+    background-color: rgb(255, 255, 255);
+    color:#fff;
+    font:13px Helvetica,  Arial,  sans-serif
 }
 
-.buttonContainer > p {
-
-	color: #504940;
-	margin-top: -15px;
-	margin-bottom: 20px;
+#content {
+    padding:15px 0;
+    clear:both;
+    color:gray;
+    background-color: rgb(245, 245, 245);
 }
 
-.gameTitle {
-	color: #635b52;
+.wrap {
+    margin:0 auto;
+    width:950px;
 }
 
-.wrongCode {
-	color: red;
+/*
+########  #######   #######  ######## ######## ########  
+##       ##     ## ##     ##    ##    ##       ##     ## 
+##       ##     ## ##     ##    ##    ##       ##     ## 
+######   ##     ## ##     ##    ##    ######   ########  
+##       ##     ## ##     ##    ##    ##       ##   ##   
+##       ##     ## ##     ##    ##    ##       ##    ##  
+##        #######   #######     ##    ######## ##     ## 
+*/
+#footer {
+    background:#333;
+    text-align:center;
+    /* Maak de onderstaande 2 regels een comment zodat de footer niet meer aan de onderkant van de pagina staat 
+    position:fixed;
+    bottom:0; */
 }
 
+#footer a {
+    color:#fff;
+}
+/*
+########  ##     ## ######## ########  #######  ##    ## 
+##     ## ##     ##    ##       ##    ##     ## ###   ## 
+##     ## ##     ##    ##       ##    ##     ## ####  ## 
+########  ##     ##    ##       ##    ##     ## ## ## ## 
+##     ## ##     ##    ##       ##    ##     ## ##  #### 
+##     ## ##     ##    ##       ##    ##     ## ##   ### 
+########   #######     ##       ##     #######  ##    ## 
+*/
 
-.testButton {
+.button {
 
-	background: #eaded2;
-	color: #635b52;
-
-	height: 70px;
-	width: 70px;
-
-	border: 5px solid green;
-	border-radius: 5px;
-
-	padding: 5px;
-	margin: 0 10px 0 10px;
-	position: absolute;
-
-	top: 110px;
-
+/*border:outset #778899;*/
+background-color:rgb(255, 255, 255);
+border-radius:5px;
+height:36px;
+width:125px;
+text-align:center;
+margin: 0 0 0 0;
+display: inline-block;
+text-decoration: none;
+font-size:24px;
+font-weight:bold;
+font-family:Arial;
+color:#fff;
+    
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition:.5s;
+      
+}
+.button:hover {
+    background-color: #F5AE38;
+    border-radius:10px;
+    text-align:center;
+    display: inline-block;
+    
+}
+/*
+########  #######  ##    ## ########  ######  
+##       ##     ## ###   ##    ##    ##    ## 
+##       ##     ## ####  ##    ##    ##       
+######   ##     ## ## ## ##    ##     ######  
+##       ##     ## ##  ####    ##          ## 
+##       ##     ## ##   ###    ##    ##    ## 
+##        #######  ##    ##    ##     ######  
+*/
+* {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+    
 }
 
-.testButton_1 {
-	border-color: #f1462d;
-	left: 10px;
+h1  {
+    color:Gray;
+    font-family: Helvetica,  Arial;
 }
-.testButton_2 {
-	border-color: #f1644d;
-	left: 106px;
+ 
+.datum {
+    font-size: 16px;
+    font-weight: bold;
 }
-.testButton_3 {
-	border-color: #f18152;
-	left: 203px;
-}
-.testButton_4 {
-	border-color: #e8bd3f;
-	left: 300px;
-}
-
-
-.buttonContainer {
-
-	width: 400px;
-	height: 200px;
-
-
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	margin-left: -325px;
-
-	text-align: center;
-	background-color: #c1b3a4;
-	border-radius: 10px;
-}
-
-.numberDisplay {
-
-	width: 200px;
-	height: 100px;
-
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	margin-left: 125px;
-
-	padding: 50px 0 ;
-
-	text-align: center;
-	font-size: 70px;
-
-	color: #504940;
-	background-color: #c1b3a4;
-	border-radius: 10px;
-
-}
-
-
-.secretImage {
-	
-	position: absolute;
-	top: 300px;
-	left: 50%;
-	margin-left: -325px;
-
-	width: 400px;
-	height: 400px;
-
-	
-	background-color: #c1b3a4;
-	border-radius: 10px;
-}
-
-.codeCrackedMessage {
-	width: 360px;
-	height: 250px;
-
-	position: absolute;
-	top: 125px;
-	left: 20px;
-	background-color: #ad9d8f;
-	border-radius: 10px;
-
-
-}
-.codeCrackedMessage > h2 {
-	text-align: center;
-	font-size: 30px;
-	color: green;
-}
-
-.codeCrackedMessage > p {
-	text-align: center;
-	margin-top: -10px;
-
-
-}
-
-.wrongCode {
-	color: #e3161a;
-	text-align: center;
-}
-
-.wrongCode > h2 {
-	 font-size: 30px;
-}
-
-.info {
-
-	position: absolute;
-	top: 300px;
-	left: 50%;
-	margin-left: 125px;
-
-	width: 200px;
-	height: 400px;	
-
-	background-color: #c1b3a4;
-	border-radius: 10px;
-
-	text-align: center;
-	color:#504940;
-	
-}
-
-.infoTitle {
-	font-size: 26px;
-}
-
-.info > p {
-
-	margin-top: -20px;
-}
-
-
-
-.codepad {
-	position: absolute;
-	top: 320px;
-	left: 50%;
-	margin-left: -305px;
-
-	width: 360px;
-	height: 86px;
-
-	
-	background-color: #ad9d8f;
-	border-radius: 10px;
-}
-
-
-.enteredCodeDisplay_1 {
-	background-color: rgb(255, 255, 255);
-	height: 70px;
-	width: 70px;
-
-	position: absolute;
-	top: 8px;
-	left: 8px;
-	border-radius: 5px;
-}
-
-.enteredCodeDisplay_2 {
-	background-color: rgb(255, 255, 255);
-	height: 70px;
-	width: 70px;
-
-	position: absolute;
-	top: 8px;
-	left: 100px;
-	border-radius: 5px;
-}
-
-.enteredCodeDisplay_3 {
-	background-color: rgb(255, 255, 255);
-	height: 70px;
-	width: 70px;
-
-	position: absolute;
-	top: 8px;
-	left: 191px;
-	border-radius: 5px;
-}
-
-.enteredCodeDisplay_4 {
-	background-color: rgb(255, 255, 255);
-	height: 70px;
-	width: 70px;
-
-	position: absolute;
-	top: 8px;
-	left: 283px;
-	border-radius: 5px;
-}
-
-
-
-
-
-
-
-
