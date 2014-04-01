@@ -1,3 +1,20 @@
+
+/*
+Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=global
+
+ ######   ##        #######  ########     ###    ##       
+##    ##  ##       ##     ## ##     ##   ## ##   ##       
+##        ##       ##     ## ##     ##  ##   ##  ##       
+##   #### ##       ##     ## ########  ##     ## ##       
+##    ##  ##       ##     ## ##     ## ######### ##       
+##    ##  ##       ##     ## ##     ## ##     ## ##       
+ ######   ########  #######  ########  ##     ## ######## 
+ */
+* {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   	font-weight: 300;
+}
+
 /*
 ##     ## ########    ###    ########  ######## ########  
 ##     ## ##         ## ##   ##     ## ##       ##     ## 
@@ -6,62 +23,203 @@
 ##     ## ##       ######### ##     ## ##       ##   ##   
 ##     ## ##       ##     ## ##     ## ##       ##    ##  
 ##     ## ######## ##     ## ########  ######## ##     ## 
-*/
-#header, #footer {
-    float:left;
-    padding:15px 0;
-    min-width:100%;
-}
+ */
+.header {
+	width: 1000px;
+	height: 80px;
 
-#header {
-    background:rgb(224, 138, 52);
-}
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -500px;
 
-#header a {
-    color:rgb(52, 171, 224);
-}
-
-#header, .quotes {
-    background:rgb(52, 171, 224);
-}
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 
 
-#header .logo {
-    float:left;
-    width:144px;
+	background: #344551; /* Old browsers */
+	background: -moz-linear-gradient(left,  #344551 0%, #b4c9d5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#344551), color-stop(100%,#b4c9d5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* IE10+ */
+	background: linear-gradient(to right,  #344551 0%,#b4c9d5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#344551', endColorstr='#b4c9d5',GradientType=1 ); /* IE6-9 */
+
+
+}
+.websitelogo {
+	position: absolute;
+	top: 15px;
+	left: 5px;
 }
 
-#header p {
-    float:right;
-    width:400px;
-    margin:0;
+.navButton {
+	width: 180px;
+
+	position: absolute;
+	top: 15px;
+	margin: 0;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+	border-radius: 5px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.4);
+
+
+	text-replace: none;
+	transition: 0.5s background-color;
 }
+
+.navButton:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nv1 {
+	left: 190px;
+}
+.nv2 {
+	left: 385px;
+}
+.nv3 {
+	left: 580px;
+}
+.nv4 {
+	left: 775px;
+}
+
+
 /*
-########   #######  ########  ##    ## 
-##     ## ##     ## ##     ##  ##  ##  
-##     ## ##     ## ##     ##   ####   
-########  ##     ## ##     ##    ##    
-##     ## ##     ## ##     ##    ##    
-##     ## ##     ## ##     ##    ##    
-########   #######  ########     ##    
+ ######   #######  ##    ## ######## ######## ##    ## ######## 
+##    ## ##     ## ###   ##    ##    ##       ###   ##    ##    
+##       ##     ## ####  ##    ##    ##       ####  ##    ##    
+##       ##     ## ## ## ##    ##    ######   ## ## ##    ##    
+##       ##     ## ##  ####    ##    ##       ##  ####    ##    
+##    ## ##     ## ##   ###    ##    ##       ##   ###    ##    
+ ######   #######  ##    ##    ##    ######## ##    ##    ##    
 */
-body {
-    background-color: rgb(255, 255, 255);
-    color:#fff;
-    font:13px Helvetica,  Arial,  sans-serif
+.content {
+	width: 960px;
+	height: 760px;
+
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -500px;
+	z-index: -1;
+
+	padding: 20px;
+
+	background-color: #EBEBEB;
 }
 
-#content {
-    padding:15px 0;
-    clear:both;
-    color:gray;
-    background-color: rgb(245, 245, 245);
+
+
+/*
+ ######   #######   ######  ####    ###    ##       
+##    ## ##     ## ##    ##  ##    ## ##   ##       
+##       ##     ## ##        ##   ##   ##  ##       
+ ######  ##     ## ##        ##  ##     ## ##       
+      ## ##     ## ##        ##  ######### ##       
+##    ## ##     ## ##    ##  ##  ##     ## ##       
+ ######   #######   ######  #### ##     ## ######## 
+*/
+.socialButton {
+	height: 80px;
+	width: 240px;
+
+	position: absolute;
+	top: 30px;
+	left: 70px;
+
+	border-radius: 10px;
+/*	border-bottom: 5px black;
+*/
+
+	transition: 0.55s all;
+
+	color: white;
+	background-color: #CD4939;
 }
 
-.wrap {
-    margin:0 auto;
-    width:950px;
+.socialButton:hover {
+	background-color: #6fd354;
 }
+.socialButton > p {
+	position: absolute;
+	top: -8px;
+	left: 90px;
+
+	font-size: 30px;
+	padding-top: -25px;
+}
+
+.twitter {
+	background-color: #55ACEE;
+}
+
+.twitter > p {
+	left: 80px;
+}
+
+.twitter > img {
+	height: 50px;
+	width:60px;
+
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.facebook {
+	background-color: #3B5998;
+	left: 380px;
+}
+
+.facebook > img {
+	height: 100px;
+	width: 100px;
+
+	position: absolute;
+	left: -10px;
+}
+
+.github {
+	left: 690px;
+}
+
+.github > img {
+	height: 90px;
+	width: 90px;
+}
+
+
+h2 {
+	color:#CD4939;
+	font-weight: bold;
+}
+
+/*
+########  ########   #######        ## ########  ######  ######## 
+##     ## ##     ## ##     ##       ## ##       ##    ##    ##    
+##     ## ##     ## ##     ##       ## ##       ##          ##    
+########  ########  ##     ##       ## ######   ##          ##    
+##        ##   ##   ##     ## ##    ## ##       ##          ##    
+##        ##    ##  ##     ## ##    ## ##       ##    ##    ##    
+##        ##     ##  #######   ######  ########  ######     ##   
+ */
+
+.project {
+	text-align: center;
+}
+
+
 
 /*
 ########  #######   #######  ######## ######## ########  
@@ -71,79 +229,22 @@ body {
 ##       ##     ## ##     ##    ##    ##       ##   ##   
 ##       ##     ## ##     ##    ##    ##       ##    ##  
 ##        #######   #######     ##    ######## ##     ## 
-*/
-#footer {
-    background:#333;
-    text-align:center;
-    /* Maak de onderstaande 2 regels een comment zodat de footer niet meer aan de onderkant van de pagina staat 
-    position:fixed;
-    bottom:0; */
-}
+ */
+.footer {
+	width: 1000px;
+	height: 90px;
 
-#footer a {
-    color:#fff;
-}
-/*
-########  ##     ## ######## ########  #######  ##    ## 
-##     ## ##     ##    ##       ##    ##     ## ###   ## 
-##     ## ##     ##    ##       ##    ##     ## ####  ## 
-########  ##     ##    ##       ##    ##     ## ## ## ## 
-##     ## ##     ##    ##       ##    ##     ## ##  #### 
-##     ## ##     ##    ##       ##    ##     ## ##   ### 
-########   #######     ##       ##     #######  ##    ## 
-*/
+	position:absolute;
+	top: 900px;
+	left: 50%;
+	margin-left: -500px;
+	margin-bottom: 20px;
 
-.button {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 
-/*border:outset #778899;*/
-background-color:rgb(255, 255, 255);
-border-radius:5px;
-height:36px;
-width:125px;
-text-align:center;
-margin: 0 0 0 0;
-display: inline-block;
-text-decoration: none;
-font-size:24px;
-font-weight:bold;
-font-family:Arial;
-color:#fff;
-    
--o-transition:.5s;
--ms-transition:.5s;
--moz-transition:.5s;
--webkit-transition:.5s;
-transition:.5s;
-      
-}
-.button:hover {
-    background-color: #F5AE38;
-    border-radius:10px;
-    text-align:center;
-    display: inline-block;
-    
-}
-/*
-########  #######  ##    ## ########  ######  
-##       ##     ## ###   ##    ##    ##    ## 
-##       ##     ## ####  ##    ##    ##       
-######   ##     ## ## ## ##    ##     ######  
-##       ##     ## ##  ####    ##          ## 
-##       ##     ## ##   ###    ##    ##    ## 
-##        #######  ##    ##    ##     ######  
-*/
-* {
-     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-    
-}
+	background-color: #222C32;
 
-h1  {
-    color:Gray;
-    font-family: Helvetica,  Arial;
-}
- 
-.datum {
-    font-size: 16px;
-    font-weight: bold;
+	text-align: center;
+	color: white;
 }
