@@ -62,30 +62,71 @@ h1 {
 	left: 260px;
 }
 
+.gameContainer {
+	position: absolute;
+	height: 490px;
+	width: 540px;
+
+	/*game position*/
+	left: 50%;
+	margin-left: -270px;
+
+	top: 50px;
+}
+
+.gameTitle {
+	position: absolute;
+	height: 80px;
+	width: 540px;
+
+	background-color: rgba(215, 215, 215, 0.5);
+	border-radius: 10px;
+
+}
 .level {
 	position: absolute;
 	height: 380px;
 	width: 380px;
 
-	left: 50%;
-	margin-left: -190px;
-	top: 80px;
+	top: 110px;
 
 	background-color: rgba(215, 215, 215, 0.5);
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
+.info {
+	position: absolute;
+	height: 380px;
+	width: 130px;
 
+	top: 110px;
+	left: 410px;
+
+	text-align: center;
+	font-weight: bold;
+	color: #939393;
+	border-radius: 10px;
+	background-color: rgba(215, 215, 215, 0.5);
+}
+
+a { color : #3ce6c2;}
+
+.websitelogo {
+	position: absolute;
+	top: 320px;
+	left: -8px;
+}
+
+.gameTitle > h1 {
+	color: #e0002e;
+}
 
 .victoryDisplay {
 	position: absolute;
 	height: 50px;
 	width: 380px;
 
-	top: 450px;
-	left: 50%;
-
-	margin-left: -190px
+	top: 520px;
 }
 
 .blueVictory {
