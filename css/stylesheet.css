@@ -13,8 +13,14 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 * {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    	font-weight: bold;
-   	color: 404040;
+   	color:#404040;
 }
+
+h2 {
+	color:#ff1b20;
+	font-weight: bold;
+}
+
 
 /*
 ##     ## ########    ###    ########  ######## ########  
@@ -98,7 +104,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 */
 .content {
 	width: 960px;
-	height: 760px;
+	height: 1300px;
 
 	position: absolute;
 	top: 100px;
@@ -108,7 +114,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 
 	padding: 20px;
 
-	background-color: #F8F6E7;
+	background-color: #fdfaeb;
 }
 
 
@@ -192,13 +198,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 	width: 90px;
 }
 
-
-h2 {
-	color:#F24C27;
-	font-weight: bold;
-}
-
-/*
+ /*
 ########  ########   #######        ## ########  ######  ######## 
 ##     ## ##     ## ##     ##       ## ##       ##    ##    ##    
 ##     ## ##     ## ##     ##       ## ##       ##          ##    
@@ -210,6 +210,10 @@ h2 {
 
 .project {
 	text-align: center;
+}
+
+.TicTacoToeImage > img{
+	border-radius: 10px;
 }
 
 
@@ -228,13 +232,14 @@ h2 {
 	height: 90px;
 
 	position:absolute;
-	top: 900px;
+	top: 1400px;
 	left: 50%;
 	margin-left: -500px;
 	margin-bottom: 20px;
 
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	border-top: 8px solid black;
 
 	background-color: #037E8C;
 
