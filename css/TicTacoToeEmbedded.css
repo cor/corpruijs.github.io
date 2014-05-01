@@ -58,9 +58,9 @@
 	height: 380px;
 	width: 380px;
 
-	left: 50%;
-	margin-left: -190px;
-	top: 120px;
+	left: 100px;
+	/*margin-left: -190px;*/
+	top: 200px;
 
 	background-color: rgba(215, 215, 215, 0.5);
 	border-radius: 5px;

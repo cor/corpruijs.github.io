@@ -12,7 +12,8 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
  */
 * {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   	font-weight: 300;
+   	font-weight: bold;
+   	color: 404040;
 }
 
 /*
@@ -35,18 +36,9 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	border-bottom: 8px solid black;
 
-
-	background: #344551; /* Old browsers */
-	background: -moz-linear-gradient(left,  #344551 0%, #b4c9d5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#344551), color-stop(100%,#b4c9d5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #344551 0%,#b4c9d5 100%); /* IE10+ */
-	background: linear-gradient(to right,  #344551 0%,#b4c9d5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#344551', endColorstr='#b4c9d5',GradientType=1 ); /* IE6-9 */
-
-
+	background: #024959;
 }
 .websitelogo {
 	position: absolute;
@@ -116,7 +108,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 
 	padding: 20px;
 
-	background-color: #EBEBEB;
+	background-color: #F8F6E7;
 }
 
 
@@ -135,7 +127,8 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 	width: 240px;
 
 	position: absolute;
-	top: 30px;
+
+	top: 600px;
 	left: 70px;
 
 	border-radius: 10px;
@@ -148,9 +141,6 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 	background-color: #CD4939;
 }
 
-.socialButton:hover {
-	background-color: #6fd354;
-}
 .socialButton > p {
 	position: absolute;
 	top: -8px;
@@ -165,7 +155,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 }
 
 .twitter > p {
-	left: 80px;
+	left: 75px;
 }
 
 .twitter > img {
@@ -173,8 +163,8 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 	width:60px;
 
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 15px;
+	left: 10px;
 }
 
 .facebook {
@@ -190,6 +180,9 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 	left: -10px;
 }
 
+.facebook > p {
+	left: 80px;
+}
 .github {
 	left: 690px;
 }
@@ -201,7 +194,7 @@ Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=glob
 
 
 h2 {
-	color:#CD4939;
+	color:#F24C27;
 	font-weight: bold;
 }
 
@@ -243,7 +236,7 @@ h2 {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 
-	background-color: #222C32;
+	background-color: #037E8C;
 
 	text-align: center;
 	color: white;
