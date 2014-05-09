@@ -58,9 +58,9 @@
 	height: 380px;
 	width: 380px;
 
-	left: 50px;
+	left: 20px;
 	/*margin-left: -190px;*/
-	top: 200px;
+	top: 160px;
 
 	background-color: rgba(215, 215, 215, 0.5);
 	border-radius: 5px;
@@ -73,7 +73,7 @@
 	height: 50px;
 	width: 380px;
 
-	top: 540px;
+	top: 520px;
 	left: 250px;
 
 	margin-left: -190px
