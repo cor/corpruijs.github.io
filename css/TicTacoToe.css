@@ -124,9 +124,9 @@ a { color : #3ce6c2;}
 .victoryDisplay {
 	position: absolute;
 	height: 50px;
-	width: 380px;
+	width: 540px;
 
-	top: 520px;
+	top: 450px;
 }
 
 .blueVictory {
@@ -138,6 +138,13 @@ a { color : #3ce6c2;}
 
 .redVictory {
 	color: #e0002e;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 50px;
+}
+
+.tieVictory {
+	color: #939393;
 	text-align: center;
 	font-weight: bolder;
 	font-size: 50px;
