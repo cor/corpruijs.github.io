@@ -3,15 +3,11 @@ var currentTurn = 1;
 var gameRunning = true;
 var gameWinner = 0;
 
-/**
- * Clear the level
- */
 function clearLevel () {
 	for (var i = level.length - 1; i >= 0; i--) {
 		level[i] = 0;
 	}
 }
-
 
 function checkForVictory (playerToCheck) {
 	//horizontal
@@ -29,11 +25,26 @@ function checkForVictory (playerToCheck) {
 	return false;
 }
 
+function aiTurn () {
+
+	for (var i = level.length - 1; i >= 0; i--) {
+		level[i]
+	};
+}
+
 function setLevelField(levelField, value) {
 	if (level[levelField] === 0) {
 		level[levelField] = value;
 		changeTurn();
 	}
+}
+
+function resetGame (){
+	gameRunning = true;
+	gameWinner = 0;
+	showVictory();
+	clearLevel();
+	updateLevel();
 }
 
 function updateLevel () {
@@ -65,7 +76,6 @@ function updateLevel () {
 	}
 }
 
-
 function changeTurn () {
 	if (currentTurn == 1) {
 		currentTurn = 2;
@@ -78,9 +88,9 @@ function changeTurn () {
 }
 
 function showVictory () {
-	if(gameWinner == 1 ) $(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>')
-
-	if(gameWinner == 2 ) $(".victoryDisplay").html('<p class="redVictory">Red has won!</p>')
+	if(gameWinner == 0 ) $(".victoryDisplay").html('<p><p>');
+	if(gameWinner == 1 ) $(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>');
+	if(gameWinner == 2 ) $(".victoryDisplay").html('<p class="redVictory">Red has won!</p>');
 }
 
 $(document).ready(function(){
@@ -92,6 +102,7 @@ $(document).ready(function(){
 			setLevelField(0, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 		});
 
 		$( ".lf0" ).click(function() {
@@ -99,6 +110,7 @@ $(document).ready(function(){
 			setLevelField(0, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 		});
 
 
@@ -107,6 +119,7 @@ $(document).ready(function(){
 			setLevelField(1, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 		});
 
 		$( ".lf2" ).click(function() {
@@ -114,6 +127,7 @@ $(document).ready(function(){
 			setLevelField(2, currentTurn);
 			updateLevel();
 			}
+			else resetGame();
 		});
 
 		$( ".lf3" ).click(function() {
@@ -121,6 +135,7 @@ $(document).ready(function(){
 			setLevelField(3, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 
 		});
 
@@ -129,6 +144,7 @@ $(document).ready(function(){
 			setLevelField(4, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 
 		});
 
@@ -137,6 +153,7 @@ $(document).ready(function(){
 			setLevelField(5, currentTurn);
 			updateLevel();
 			}	 
+			else resetGame();
 		});
 
 		$( ".lf6" ).click(function() {
@@ -144,6 +161,7 @@ $(document).ready(function(){
 			setLevelField(6, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 		});
 
 		$( ".lf7" ).click(function() {
@@ -151,6 +169,7 @@ $(document).ready(function(){
 			setLevelField(7, currentTurn);
 			updateLevel();
 			} 
+			else resetGame();
 		});
 
 		$( ".lf8" ).click(function() {
@@ -158,5 +177,6 @@ $(document).ready(function(){
 			setLevelField(8, currentTurn);
 	 		updateLevel();
 			}
+			else resetGame();
 		});
 });
