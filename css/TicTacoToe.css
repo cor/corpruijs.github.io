@@ -125,8 +125,8 @@ a { color : #3ce6c2;}
 	position: absolute;
 	height: 50px;
 	width: 540px;
-
-	top: 450px;
+    left: -80px;
+	top: 50px;
 }
 
 .blueVictory {

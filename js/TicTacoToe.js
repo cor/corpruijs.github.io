@@ -8,6 +8,7 @@ $(document).ready(function(){
 	clearLevel();
 	updateLevel();
 
+		
 		$( ".lf0" ).click(function() {if (gameRunning) setLevelField(0, currentTurn); else resetGame(); });
 		$( ".lf1" ).click(function() {if (gameRunning) setLevelField(1, currentTurn); else resetGame(); });
 		$( ".lf2" ).click(function() {if (gameRunning) setLevelField(2, currentTurn); else resetGame(); });
@@ -17,7 +18,9 @@ $(document).ready(function(){
 		$( ".lf6" ).click(function() {if (gameRunning) setLevelField(6, currentTurn); else resetGame(); });
 		$( ".lf7" ).click(function() {if (gameRunning) setLevelField(7, currentTurn); else resetGame(); });
 		$( ".lf8" ).click(function() {if (gameRunning) setLevelField(8, currentTurn); else resetGame(); });
-		$( ".levelField").click(function() { updateLevel(); }); });
+		$( ".levelField").click(function() { updateLevel(); }); 
+
+	});
 
 function updateLevel () {
 	for (var i = level.length - 1; i >= 0; i--) {
@@ -40,10 +43,39 @@ function updateLevel () {
 		gameWinner = 4;
 	}
 
-	if(gameWinner == 0 ) $(".victoryDisplay").html('<p><p>');
-	if(gameWinner == 1 ) $(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>');
-	if(gameWinner == 2 ) $(".victoryDisplay").html('<p class="redVictory">Red has won!</p>');
-	if(gameWinner == 4 ) $(".victoryDisplay").html('<p class="tieVictory">The game is a Tie</p>');
+	if(gameWinner == 0) {
+		$(".victoryDisplay").html('<p><p>');
+	}
+	if(gameWinner == 0 && !gameRunning) {
+		$(".victoryDisplay").html('<p><p>');
+		$( ".level")
+			.slideToggle( 700 )
+			.animate({ left: "-=500" }, 1500 )
+			.animate({ top: "110px" }, 100 )
+			.slideToggle( "fast" )
+			.animate({ left: "+=500" }, 1500 )
+	}
+
+	if(gameWinner == 1 ) {
+		$(".level").animate({
+			top: '190px'
+		}, 1000, function () {
+			$(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>');
+		});
+		$(".level").animate({top : '170px'}, 500);
+	}
+
+	if(gameWinner == 2 ) {
+		$(".level").animate({top: '170px'}, 1000, function (){
+			$(".victoryDisplay").html('<p class="redVictory">Red has won!</p>');
+		});
+	}
+	
+	if(gameWinner == 4 ) {
+		$(".level").animate({top: '170px'}, 1000, function (){
+			$(".victoryDisplay").html('<p class="tieVictory">The game is a tie!</p>');
+		});
+	}
 }
 
 function checkForVictory (playerToCheck) {
@@ -69,17 +101,18 @@ function setLevelField(levelField, value) {
 }
 
 function resetGame (){
-	gameRunning = true;
 	gameWinner = 0;
 	clearLevel();
-	updateLevel();
+	updateLevel();	
+	gameRunning = true;
 }
 
 function clearLevel () {
 	for (var i = level.length - 1; i >= 0; i--) level[i] = 0; 
 }
+
 function changeTurn () {
 	if (currentTurn == 1) currentTurn = 2; 
 	else if (currentTurn == 2) currentTurn = 1;
-	else currentTurn = -1;
+	else console.log("invalid current turn"); 
 }
