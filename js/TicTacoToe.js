@@ -7,7 +7,6 @@ var gameWinner = 0;
 $(document).ready(function(){
 	clearLevel();
 	updateLevel();
-
 		
 		$( ".lf0" ).click(function() {if (gameRunning) setLevelField(0, currentTurn); else resetGame(); });
 		$( ".lf1" ).click(function() {if (gameRunning) setLevelField(1, currentTurn); else resetGame(); });
@@ -29,6 +28,11 @@ function updateLevel () {
 		else if (level[i] == 2) $(".lf" + i).css("background-color", "#e0002e");
 	}
 
+	if (gameIsTie()) {
+		gameRunning = false;
+		gameWinner = 4;
+	}
+
 	if (checkForVictory(1) == true) {
 		gameRunning = false;
 		gameWinner = 1;
@@ -38,43 +42,46 @@ function updateLevel () {
 		gameRunning = false;
 		gameWinner = 2;
 	}
-	if (gameIsTie()) {
-		gameRunning = false;
-		gameWinner = 4;
-	}
 
 	if(gameWinner == 0) {
 		$(".victoryDisplay").html('<p><p>');
 	}
+
 	if(gameWinner == 0 && !gameRunning) {
 		$(".victoryDisplay").html('<p><p>');
 		$( ".level")
 			.slideToggle( 700 )
 			.animate({ left: "-=500" }, 1500 )
-			.animate({ top: "110px" }, 100 )
+			.animate({ top: "-=60px" }, 100 )
 			.slideToggle( "fast" )
 			.animate({ left: "+=500" }, 1500 )
 	}
 
 	if(gameWinner == 1 ) {
 		$(".level").animate({
-			top: '190px'
+			top: '+=80px'
 		}, 1000, function () {
 			$(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>');
 		});
-		$(".level").animate({top : '170px'}, 500);
+		$(".level").animate({top : '-=20px'}, 500);
 	}
 
 	if(gameWinner == 2 ) {
-		$(".level").animate({top: '170px'}, 1000, function (){
-			$(".victoryDisplay").html('<p class="redVictory">Red has won!</p>');
+		$(".level").animate({
+			top: '+=80px'
+		}, 1000, function () {
+			$(".victoryDisplay").html('<p class="redVictory">Red has won!<p>');
 		});
+		$(".level").animate({top : '-=20px'}, 500);
 	}
 	
 	if(gameWinner == 4 ) {
-		$(".level").animate({top: '170px'}, 1000, function (){
+		$(".level").animate({
+			top: '+=80px'
+		}, 1000, function () {
 			$(".victoryDisplay").html('<p class="tieVictory">The game is a tie!</p>');
 		});
+		$(".level").animate({top : '-=20px'}, 500);
 	}
 }
 
