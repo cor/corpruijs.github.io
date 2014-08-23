@@ -1,8 +1,19 @@
+body {
+    background-color: #F0EFDD;
+}
+
 header {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+header #name {
     height: 100px;
 
+    font-family: "Helvetica Neue", Helvetica, serif;
 
-
-    background-color: lightskyblue;
-
+    color: white;
+    background-color: #659678;
 }

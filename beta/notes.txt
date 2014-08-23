@@ -1,0 +1,7 @@
+colors:
+
+#659678 green
+#4D7656 greener
+#F0EFDD white
+#C0B693 brown
+#595345 browner
