@@ -5,15 +5,49 @@ body {
 header {
     max-width: 800px;
 
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin: 10px auto 0 auto;
 
 }
 
 header #name {
-    height: 100px;
+    height: 80px;
 
+    padding-top: 10px;
+
+
+    font-size: 60px;
     font-family: "Helvetica Neue", Helvetica, serif;
+
+    text-align: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     color: white;
     background-color: #659678;
+}
+
+header #navbar {
+    height: 30px;
+
+
+
+    color: white;
+    background-color: #4D7656;
+}
+
+header #navbar li {
+
+    width: 49%;
+
+    display: inline-block;
+
+    padding-top: 5px;
+
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, serif;
+
+
+    text-align: center;
 }
