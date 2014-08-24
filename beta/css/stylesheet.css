@@ -9,12 +9,12 @@ header {
 }
 
 header #name {
-    height: 80px;
+    height: auto;
 
-    padding-top: 10px;
+    padding: 10px;
 
 
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Helvetica Neue", Helvetica, serif;
 
     text-align: center;
@@ -27,25 +27,49 @@ header #name {
 }
 
 header #navbar {
-    height: 30px;
+    height: auto;
 
 
     color: white;
     background-color: #4D7656;
 }
 
-header #navbar li {
+header #navbar ul {
+    text-align: center;
+}
 
+header #navbar ul li {
+    height: 100%;
     width: 49%;
 
     display: inline-block;
 
-    padding-top: 5px;
+    padding: 5px 0 5px 0;
 
     font-size: 20px;
     font-family: "Helvetica Neue", Helvetica, serif;
 
     text-align: center;
+
+    transition: background-color 0.5s;
+}
+
+header #navbar ul li:hover {
+    background-color: #659678;
+}
+
+header #navbar ul #currentTab {
+    background-color: #659678;
+}
+
+header #navbar ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header #navbar ul a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 #content {
@@ -55,10 +79,18 @@ header #navbar li {
     margin: 0 auto;
     padding: 10px;
 
-    font-family: Helvetica;
+    font-family: "Helvetica Neue", Helvetica, serif;
 
     color: #695f4e;
     background-color: #F0EFDD;
+}
+
+h2 {
+
+    margin-top: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
 }
 
 p {
