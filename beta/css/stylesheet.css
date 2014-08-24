@@ -117,3 +117,10 @@ p {
     margin-top: 10px;
 }
 
+@media screen and (max-device-width: 480px) and (orientation: portrait)  {
+    #container {
+        max-width: none;
+    }
+}
+
+
