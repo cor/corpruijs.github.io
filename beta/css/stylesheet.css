@@ -13,13 +13,9 @@ header {
 }
 
 header #name {
-    height: auto;
+    height: 50px;
 
     padding: 10px;
-
-
-    font-size: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
 
     text-align: center;
 
@@ -29,7 +25,21 @@ header #name {
     color: white;
     background-color: #659678;
 
+}
+header #name h1 {
 
+
+    float: left;
+    margin-right: 50px;
+
+    font-size: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    float: right;
 }
 
 header #navbar {
@@ -87,6 +97,12 @@ header #navbar ul a:visited {
     header #name {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+    }
+
+    header #name h1 {
+        margin-top: 5px;
+
+        font-size: 40px;
     }
 }
 
