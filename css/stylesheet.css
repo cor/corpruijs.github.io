@@ -1,249 +1,96 @@
+body {
+  -webkit-font-smoothing: antialiased; }
 
-/*
-Comments made using http://patorjk.com/software/taag/#p=display&f=Banner3&t=global
+#container {
+  max-width: 800px;
+  margin: 0 auto; }
 
- ######   ##        #######  ########     ###    ##       
-##    ##  ##       ##     ## ##     ##   ## ##   ##       
-##        ##       ##     ## ##     ##  ##   ##  ##       
-##   #### ##       ##     ## ########  ##     ## ##       
-##    ##  ##       ##     ## ##     ## ######### ##       
-##    ##  ##       ##     ## ##     ## ##     ## ##       
- ######   ########  #######  ########  ##     ## ######## 
- */
-* {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   	font-weight: bold;
-   	color:#404040;
-}
+header {
+  padding-top: 10px; }
+  header #name {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: #659678; }
+    header #name h1 {
+      float: left;
+      margin-right: 50px;
+      font-size: 50px;
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif; }
+  header img {
+    height: 50px;
+    width: 50px;
+    float: right; }
+  header #navbar {
+    height: auto;
+    color: white;
+    background-color: #4D7656; }
+    header #navbar ul {
+      text-align: center; }
+      header #navbar ul li {
+        height: 100%;
+        width: 49%;
+        display: inline-block;
+        padding: 5px 0 5px 0;
+        font-size: 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
+        text-align: center;
+        transition: background-color 0.5s; }
+      header #navbar ul li:hover {
+        background-color: #659678; }
+      header #navbar ul #currentTab {
+        background-color: #659678; }
+      header #navbar ul a {
+        text-decoration: none;
+        color: white; }
+      header #navbar ul a:visited {
+        text-decoration: none;
+        color: white; }
+
+footer {
+  width: 100%;
+  height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #595345; }
+  footer p {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
+    vertical-align: center;
+    line-height: 80px;
+    margin: 0;
+    color: #C0B693; }
+    footer p a {
+      color: #C0B693;
+      text-decoration: none; }
+
+@media screen and (max-width: 800px) {
+  header {
+    padding-top: 0; }
+    header #name {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      header #name h1 {
+        margin-top: 5px;
+        font-size: 40px; } }
+#content {
+  width: auto;
+  height: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
+  color: #695f4e;
+  background-color: #F0EFDD; }
 
 h2 {
-	color:#ff1b20;
-	font-weight: bold;
-}
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold; }
 
+p {
+  margin-top: 10px; }
 
-/*
-##     ## ########    ###    ########  ######## ########  
-##     ## ##         ## ##   ##     ## ##       ##     ## 
-##     ## ##        ##   ##  ##     ## ##       ##     ## 
-######### ######   ##     ## ##     ## ######   ########  
-##     ## ##       ######### ##     ## ##       ##   ##   
-##     ## ##       ##     ## ##     ## ##       ##    ##  
-##     ## ######## ##     ## ########  ######## ##     ## 
- */
-.header {
-	width: 1000px;
-	height: 80px;
-
-	position: absolute;
-	top: 20px;
-	left: 50%;
-	margin-left: -500px;
-
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom: 8px solid black;
-
-	background: #024959;
-}
-.websitelogo {
-	position: absolute;
-	top: 15px;
-	left: 5px;
-}
-
-.navButton {
-	width: 180px;
-
-	position: absolute;
-	top: 15px;
-	margin: 0;
-
-	padding-top: 6px;
-	padding-bottom: 6px;
-
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
-
-	border-radius: 5px;
-	color: white;
-	background-color: rgba(255, 255, 255, 0.4);
-
-
-	text-replace: none;
-	transition: 0.5s background-color;
-}
-
-.navButton:hover {
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-.nv1 {
-	left: 190px;
-}
-.nv2 {
-	left: 385px;
-}
-.nv3 {
-	left: 580px;
-}
-.nv4 {
-	left: 775px;
-}
-
-
-/*
- ######   #######  ##    ## ######## ######## ##    ## ######## 
-##    ## ##     ## ###   ##    ##    ##       ###   ##    ##    
-##       ##     ## ####  ##    ##    ##       ####  ##    ##    
-##       ##     ## ## ## ##    ##    ######   ## ## ##    ##    
-##       ##     ## ##  ####    ##    ##       ##  ####    ##    
-##    ## ##     ## ##   ###    ##    ##       ##   ###    ##    
- ######   #######  ##    ##    ##    ######## ##    ##    ##    
-*/
-.content {
-	width: 960px;
-	height: 600px;
-
-	position: absolute;
-	top: 100px;
-	left: 50%;
-	margin-left: -500px;
-	z-index: -1;
-
-	padding: 20px;
-
-	background-color: #fdfaeb;
-}
-
-
-
-/*
- ######   #######   ######  ####    ###    ##       
-##    ## ##     ## ##    ##  ##    ## ##   ##       
-##       ##     ## ##        ##   ##   ##  ##       
- ######  ##     ## ##        ##  ##     ## ##       
-      ## ##     ## ##        ##  ######### ##       
-##    ## ##     ## ##    ##  ##  ##     ## ##       
- ######   #######   ######  #### ##     ## ######## 
-*/
-.socialButton {
-	height: 80px;
-	width: 240px;
-
-	position: absolute;
-
-	top: 300px;
-	left: 70px;
-
-	border-radius: 10px;
-/*	border-bottom: 5px black;
-*/
-
-	transition: 0.55s all;
-
-	color: white;
-	background-color: #CD4939;
-}
-
-.socialButton > p {
-	position: absolute;
-	color: white;
-	top: -8px;
-	left: 90px;
-
-	font-size: 30px;
-	padding-top: -25px;
-}
-
-.twitter {
-	background-color: #55ACEE;
-}
-
-.twitter > p {
-	left: 75px;
-}
-
-.twitter > img {
-	height: 50px;
-	width:60px;
-
-	position: absolute;
-	top: 15px;
-	left: 10px;
-}
-
-.facebook {
-	background-color: #3B5998;
-	left: 380px;
-}
-
-.facebook > img {
-	height: 100px;
-	width: 100px;
-
-	position: absolute;
-	left: -10px;
-}
-
-.facebook > p {
-	left: 80px;
-}
-.github {
-	left: 690px;
-}
-
-.github > img {
-	height: 90px;
-	width: 90px;
-}
-
- /*
-########  ########   #######        ## ########  ######  ######## 
-##     ## ##     ## ##     ##       ## ##       ##    ##    ##    
-##     ## ##     ## ##     ##       ## ##       ##          ##    
-########  ########  ##     ##       ## ######   ##          ##    
-##        ##   ##   ##     ## ##    ## ##       ##          ##    
-##        ##    ##  ##     ## ##    ## ##       ##    ##    ##    
-##        ##     ##  #######   ######  ########  ######     ##   
- */
-
-.project {
-	text-align: center;
-}
-
-.TicTacoToeImage > img{
-	border-radius: 10px;
-}
-
-
-
-/*
-########  #######   #######  ######## ######## ########  
-##       ##     ## ##     ##    ##    ##       ##     ## 
-##       ##     ## ##     ##    ##    ##       ##     ## 
-######   ##     ## ##     ##    ##    ######   ########  
-##       ##     ## ##     ##    ##    ##       ##   ##   
-##       ##     ## ##     ##    ##    ##       ##    ##  
-##        #######   #######     ##    ######## ##     ## 
- */
-.footer {
-	width: 1000px;
-	height: 90px;
-
-	position:absolute;
-	top: 730px;
-	left: 50%;
-	margin-left: -500px;
-	margin-bottom: 20px;
-
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-top: 8px solid black;
-
-	background-color: #037E8C;
-
-	text-align: center;
-	color: white;
-}
+/*# sourceMappingURL=stylesheet.css.map */
