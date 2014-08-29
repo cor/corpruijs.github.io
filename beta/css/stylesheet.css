@@ -56,6 +56,16 @@ footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #595345; }
+  footer p {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
+    vertical-align: center;
+    line-height: 80px;
+    margin: 0;
+    color: #C0B693; }
+    footer p a {
+      color: #C0B693;
+      text-decoration: none; }
 
 @media screen and (max-width: 800px) {
   header {
@@ -71,7 +81,7 @@ footer {
   height: 500px;
   margin: 0 auto;
   padding: 10px;
-  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", serif;
   color: #695f4e;
   background-color: #F0EFDD; }
 
