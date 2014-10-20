@@ -128,6 +128,7 @@ footer {
 
 
 @media screen and  (max-width: 800px) {
+
   header {
     padding-top: 0;
 
@@ -142,6 +143,11 @@ footer {
       }
     }
   }
+
+  footer {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 
@@ -155,7 +161,7 @@ footer {
   font-family: $font-basic;
 
   color: #695f4e;
-  background-color: #F0EFDD;
+  background-color: $color-background;
 }
 
 h2 {
