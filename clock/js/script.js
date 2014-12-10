@@ -15,7 +15,7 @@ var pointers = {
 	hour: {
 		length: {
 			start: 0.07,
-			end: 0.9
+			end: 0.7
 		},
 		color: "black",
 		width: 5,
@@ -27,7 +27,7 @@ var pointers = {
 	minute: {
 		length: {
 			start: 0.07,
-			end: 0.85
+			end: 0.9,
 		},
 		color: "black",
 		width: 5,
@@ -92,6 +92,19 @@ function drawFrame() {
 		context.closePath();
 		context.restore();
 	};
+
+	// draw minute lines
+	for (var i = 0; i < 60; i++) {
+		context.save();
+		context.rotate(i * 6 * degreesToRadians );
+		context.beginPath();
+		context.lineWidth = 0.5
+		context.moveTo(0, clockRadius);
+		context.lineTo(0, clockRadius * 0.95);
+		context.stroke();
+		context.closePath();
+		context.restore();
+	};
 }
 
 // draw any pointer, the pointerType must be a key of the pointers dictionary
@@ -113,7 +126,7 @@ function drawPointer(pointerType) {
 function tick() {
 
 	var currentTime = new Date()
-	pointers.second.currentTimeValue = currentTime.getSeconds() + (currentTime.getMilliseconds() / 1000)
+	pointers.second.currentTimeValue = currentTime.getSeconds() 
 	pointers.minute.currentTimeValue = currentTime.getMinutes() + (pointers.second.currentTimeValue / 60)
 	pointers.hour.currentTimeValue = currentTime.getHours() + (pointers.minute.currentTimeValue / 60)
 
