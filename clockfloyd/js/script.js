@@ -218,8 +218,8 @@ function drawPointer(pointerType) {
 }
 
 function drawImages() {
-    drawMan("../img/run-frames/run-1.png", context, { x: -240, y: -80});
-    drawSun("../img/sun.png", context, { x: 30, y: -80});
+    drawMan("./img/run-frames/run-1.png", context, { x: -240, y: -80});
+    drawSun("./img/sun.png", context, { x: 30, y: -80});
 }
 
 function drawNumbers() {
