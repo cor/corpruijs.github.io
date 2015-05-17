@@ -120,7 +120,7 @@ function drawPointer(pointerType) {
 	context.stroke();
 	context.closePath();
 	context.restore();
-
+	
 }
 
 function tick() {
